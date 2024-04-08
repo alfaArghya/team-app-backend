@@ -35,8 +35,6 @@ export const allUserByName = async (req: Request, res: Response) => {
   const last_name: string = req.body.last_name;
 
   try {
-    console.log("hii");
-
     // fetch user information
     const users = await user.find(
       {
@@ -46,7 +44,6 @@ export const allUserByName = async (req: Request, res: Response) => {
     );
 
     //return user as array
-    console.log(users);
 
     res.status(status.Success).json({
       success: true,

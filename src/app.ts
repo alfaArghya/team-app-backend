@@ -27,7 +27,7 @@ app.use("/api*", routes.userAUTH); //user AUTH
 app.get("/api/users", routes.allUser);
 
 //get users by name
-app.get("/api/users/name", routes.allUserByName);
+app.post("/api/users/name", routes.allUserByName);
 
 // get a user by id
 app.get("/api/users/:id", routes.singleUser);
