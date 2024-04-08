@@ -1,7 +1,7 @@
 # API
 
 ```
-URL - https://team-app-backend.onrender.com/
+https://team-app-backend.onrender.com/
 
 ```
 
@@ -15,6 +15,7 @@ URL - https://team-app-backend.onrender.com/
 | `/api/users/:id`    | `get`    | `params:` {id}                                                            | `user`        | Get user data by id              |
 | `/api/users/:id`    | `put`    | `params:` {id} `body:` {first_name, last_name, gender, domain, available} |               | Update user data                 |
 | `/api/users/:id`    | `delete` | `params:` {id}                                                            | `user`        | Delete user data                 |
+| `/api/users/name`   | `post`   | `body:` {first_name, last_name}                                           | `users[]`     | Get users by name                |
 | `/api/team`         | `post`   | `body:` {teamName, teamDescription, teamMembers[]}                        | `data`        | Create team                      |
 | `/api/team`         | `get`    |                                                                           | `findTeams[]` | Get teams by admin or members id |
 | `/api/team/:id`     | `get`    | `params:` {id}                                                            | `data`        | Get team details                 |
